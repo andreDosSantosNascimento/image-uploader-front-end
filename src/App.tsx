@@ -1,7 +1,3 @@
-import React from "react";
-
-const App = () => {
-    return <div className="App"></div>;
-};
-
+import Router from "./routes/index.routes"
+const App = () => <Router/>
 export default App;
