@@ -1,6 +1,11 @@
-const HomePage = () => { 
-    return <>
-    <h1>Home Page</h1>
-    </>
-}
+import UploadCard from "../../components/uploadCard/index.component";
+import { Container } from "./style";
+
+const HomePage = () => {
+    return (
+        <Container>
+            <UploadCard />
+        </Container>
+    );
+};
 export default HomePage;
