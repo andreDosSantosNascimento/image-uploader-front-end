@@ -43,6 +43,7 @@ export const Container = styled.div`
             height: 218px;
             border: 1px dashed #97bef4;
             border-radius: 12px;
+            cursor: pointer;
             img {
                 width: 114px;
                 height: 88px;
