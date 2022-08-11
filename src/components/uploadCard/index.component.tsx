@@ -8,16 +8,13 @@ const UploadCard = () => {
     const { getRootProps, getInputProps } = useDropzone({
         onDrop,
     });
-    const handleOnSubmit = (e: FormEvent) => {
-        e.preventDefault();
-    };
     return (
         <Container>
             <div>
                 <h1>Upload your image</h1>
                 <span>File should be Jpeg, Png...</span>
             </div>
-            <form onSubmit={handleOnSubmit}>
+            <form >
                 <div {...getRootProps()}>
                     <input type="file" {...getInputProps()} />
                     <img

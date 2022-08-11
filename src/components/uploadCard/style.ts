@@ -49,5 +49,17 @@ export const Container = styled.div`
                 margin-bottom: 37px;
             }
         }
+        button{
+            border: none;
+            width: 100px;
+            height: 32px;
+            border-radius: 8px;
+            font-size: 12px;
+            line-height: -0.035em;
+            font-weight: 500;
+            color: #ffffff;
+            font-family: "Poppins";
+            background-color: #2F80ED;
+        }
     }
 `;
