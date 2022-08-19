@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+interface ContainerProps {
+    center?: boolean;
+}
+
+export const Container = styled.div<ContainerProps>`
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: ${(props) => (props.center ? "center" : "space-around")};
     align-items: center;
     margin: auto;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -19,6 +23,8 @@ export const Container = styled.div`
         font-size: 18px;
         line-height: 27px;
         color: #4f4f4f;
+        margin-top: 15px;
+        ${(props) => props.center && "margin-bottom: 10px "}
     }
     span {
         font-family: "Poppins";
@@ -50,17 +56,17 @@ export const Container = styled.div`
                 margin-bottom: 37px;
             }
         }
-        button{
-            border: none;
-            width: 100px;
-            height: 32px;
-            border-radius: 8px;
-            font-size: 12px;
-            line-height: -0.035em;
-            font-weight: 500;
-            color: #ffffff;
-            font-family: "Poppins";
-            background-color: #2F80ED;
-        }
     }
+`;
+export const Button = styled.button`
+    border: none;
+    width: 100px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: -0.035em;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: "Poppins";
+    background-color: #2f80ed;
 `;
